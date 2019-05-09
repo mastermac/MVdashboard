@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>MySales </title>
-  <meta name="description" content="">
+  <meta name="description" content="MySales Manager view dashboard experience for sales representatives.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
@@ -25,8 +25,16 @@
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <!-- <script defer src="js/vendor/modernizr-3.7.1.min.js"></script> -->
-  <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script defer>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script >
+    if(!window.jQuery){
+      var sNew = document.createElement("script");
+      sNew.async = true;
+      sNew.src = "js/vendor/jquery-3.3.1.min.js";
+      var s0 = document.getElementsByTagName('script')[0];
+      s0.parentNode.insertBefore(sNew, s0);
+    }
+  </script>
   <!-- <script defer src="js/plugins.js"></script> -->
   <script defer src="js/main.js"></script>
 
